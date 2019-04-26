@@ -1,0 +1,7 @@
+language: go
+
+before_install:
+  - go get -t -v ./...
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
